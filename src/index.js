@@ -20,8 +20,8 @@ app.post("/tiktok", async (req, res) => {
 app.get("/tiktok", async (req, res) => {
   console.log("GET ROUTE FOR TIKTOK");
   console.log(req.query);
-  const { pixel_code, event } = req.query;
-  const response = await client.postData({ pixel_code, event });
+  const data = {pixel_code: req.query.ttclid, event: req.query.event}
+  const response = await client.postData(data);
   console.log(response);
   res.sendStatus(200);
 });
