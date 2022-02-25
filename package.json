@@ -2,10 +2,9 @@
   "name": "tiktok-jumbleberry-postback-",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js"
-    
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/AbegaM/TikTok-Jumbleberry-Postback-#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "express": "^4.17.3"
   }
 }
